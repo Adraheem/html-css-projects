@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact US</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contact us</h1>
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact us</a>
+      </nav>
+    </header>
+
+    <main>
+      <form action="">
+        <div>
+          <label for="email">Email: </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email address"
+          />
+        </div>
+        <div>
+          <label for="name">Name: </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div>
+          <label for="url">URL: </label>
+          <input
+            type="text"
+            name="url"
+            id="url"
+            placeholder="Website (Optional)"
+          />
+        </div>
+        <div>
+          <label for="phoneNumber">Phone Number</label>
+          <input
+            type="tel"
+            name="phoneNumber"
+            id="phoneNumber"
+            placeholder="Phone Number"
+          />
+        </div>
+        <div>
+          <p>Gender</p>
+          <label for="male"
+            ><input type="radio" name="gender" id="male" /> Male</label
+          >
+          <label for="female"
+            ><input type="radio" name="gender" id="female" /> Female</label
+          >
+        </div>
+        <div>
+          <label for="salary">Salary</label>
+          <input
+            type="range"
+            name="salary"
+            id="salary"
+            step="20"
+            min="1000"
+            max="5000000"
+          />
+        </div>
+        <div>
+          <label for="best">Best course</label>
+          <select name="best" id="best">
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+            <option value="mySQL">MySQL</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JS">JavaScript</option>
+          </select>
+        </div>
+        <div>
+          <button>Submit</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

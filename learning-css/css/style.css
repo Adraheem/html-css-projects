@@ -1,0 +1,18 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-style: italic;
+  color: #57e;
+}
+h2 {
+  font-size: 30px;
+  text-align: center;
+  color: #ca3131;
+  background-color: rgba(223, 129, 45, 1);
+  /* border: 5px solid black; */
+  border-top: 5px dashed black;
+  border-bottom: 5px dashed black;
+}
