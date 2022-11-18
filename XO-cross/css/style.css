@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  height: 100%;
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
+.parent {
+  width: 800px;
+  height: 800px;
+  margin: 50px auto;
+  transform: skew(5deg, 5deg) rotateY(10deg);
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.parent:hover {
+  transform: skew(0deg, 0deg);
+}
+.item {
+  border: 5px solid black;
+  font-size: 8rem;
+}
+.circle {
+  border-radius: 50%;
+  background-color: aquamarine;
+}
+.squarecle {
+  border-radius: 30%;
+  background-color: crimson;
+}
