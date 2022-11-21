@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rocketz</title>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="logo">
+          <h3>ROCKETZ</h3>
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+        <div class="loginRegister">
+          <button class="button">Login</button>
+          <button class="button primary">Register</button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero container">
+      <div>
+        <img src="./images/saturn.png" class="saturn" alt="" />
+        <img src="./images/saturn.png" class="saturn2" alt="" />
+        <h6>ROCKETZ</h6>
+        <h1>Get Your Dream Job</h1>
+        <p>
+          Get the job you want here, lots of interesting jobs around the world!
+          Let's find and apply for your dream job.
+        </p>
+
+        <div class="searchDiv">
+          <div>
+            <h5>Location</h5>
+            <input type="text" placeholder="Enter Location" />
+          </div>
+          <div>
+            <h5>Location</h5>
+            <input type="text" placeholder="Enter Location" />
+          </div>
+          <div>
+            <button class="button primary">Search</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="./images/jetpack.png" class="jetpackUser" alt="" />
+      </div>
+    </section>
+
+    <section class="footer container">
+      <div>
+        <div class="image">
+          <img src="./images/highlighter.png" alt="" class="object" />
+          <img src="./images/neptune.png" alt="" class="earth" />
+        </div>
+
+        <p>Designer</p>
+      </div>
+      <div>
+        <div class="image">
+          <img src="./images/webcam.png" alt="" class="object" />
+          <img src="./images/neptune.png" alt="" class="earth" />
+        </div>
+
+        <p>Designer</p>
+      </div>
+      <div>
+        <div class="image">
+          <img src="./images/megaphone.png" alt="" class="object" />
+          <img src="./images/neptune.png" alt="" class="earth" />
+        </div>
+
+        <p>Designer</p>
+      </div>
+      <div>
+        <div class="image">
+          <img src="./images/notepad.png" alt="" class="object" />
+          <img src="./images/neptune.png" alt="" class="earth" />
+        </div>
+
+        <p>Designer</p>
+      </div>
+      <div>
+        <div class="image">
+          <img src="./images/jet-fighter.png" alt="" class="object" />
+          <img src="./images/neptune.png" alt="" class="earth" />
+        </div>
+
+        <p>Designer</p>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+      const jetPack = document.querySelector(".jetpackUser");
+      setTimeout(() => {
+        jetPack.classList.add("active");
+      }, 5000);
+    </script>
+  </body>
+</html>

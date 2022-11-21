@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url("../images/stars.svg"), linear-gradient(#00516c, #012b3d);
+  background-size: 50% auto;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.header {
+  width: 100%;
+  margin-top: 20px;
+}
+.container {
+  width: 80%;
+  margin-inline: auto;
+}
+.nav {
+  width: 80%;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+.nav > * {
+  display: flex;
+  align-items: center;
+}
+.loginRegister {
+  justify-content: flex-end;
+}
+.links ul {
+  width: 100%;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+.links li a {
+  color: #fff;
+  padding: 8px 24px;
+  text-decoration: none;
+  display: flex;
+  min-height: 70px;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+.button {
+  padding: 12px 24px;
+  background-color: #fff;
+  border: 0;
+  outline: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-inline: 4px;
+}
+.button.primary {
+  background-color: #c5fe56;
+}
+.hero {
+  display: flex;
+}
+.hero > div:first-child {
+  padding: 100px 20px;
+  width: 40%;
+  position: relative;
+}
+.saturn,
+.saturn2 {
+  position: absolute;
+  top: 0;
+  right: -150px;
+  width: 150px;
+  height: 150px;
+  filter: hue-rotate(130deg);
+}
+.saturn2 {
+  right: unset;
+  top: unset;
+  left: -80px;
+  bottom: 0;
+  width: 80px;
+  height: 80px;
+}
+.hero > div:first-child h6 {
+  color: #c5fe56;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.hero > div:first-child h1 {
+  font-size: 5rem;
+  line-height: 1.2;
+}
+.hero > div:first-child p {
+  margin-top: 10px;
+  width: 90%;
+}
+.hero > div:nth-child(2) {
+  position: relative;
+  flex: 1;
+}
+.jetpackUser {
+  position: absolute;
+  width: 500px;
+  left: 10%;
+  top: 10%;
+  filter: hue-rotate(220deg);
+  animation: jetpackUser 5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+@keyframes jetpackUser {
+  0% {
+    top: 100%;
+    left: -200%;
+  }
+  100% {
+    top: 10%;
+    left: 10%;
+  }
+}
+.jetpackUser.active {
+  animation-name: bounce;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  /* animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+  animation-timing-function: ease-in-out;
+}
+@keyframes bounce {
+  0% {
+    top: 10%;
+    left: 10%;
+    transform: scale(1);
+  }
+  50% {
+    top: 5%;
+    left: 15%;
+    transform: scale(1.03);
+  }
+  100% {
+    top: 10%;
+    left: 10%;
+    transform: scale(1);
+  }
+}
+.searchDiv {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  color: #013f5a;
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 50px;
+}
+.searchDiv > div:first-child,
+.searchDiv > div:nth-child(2) {
+  flex: 1;
+}
+.searchDiv > div:first-child {
+  margin-right: 20px;
+  border-right: 1px solid #eee;
+}
+.searchDiv h5 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.searchDiv input {
+  width: 100%;
+  border: 0;
+  padding: 8px 0;
+  outline: 0;
+}
+
+.footer {
+  background-color: #135d78;
+  border-radius: 20px 20px 0 0;
+  padding: 40px;
+  padding-top: 70px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: center;
+}
+.image {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.earth {
+  width: 100px;
+  height: auto;
+  position: relative;
+  z-index: 5;
+  filter: hue-rotate(300deg);
+}
+.object {
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30%;
+  z-index: 10;
+}
+.footer > div:hover .earth {
+  animation: rotate 4s ease-in-out infinite forwards;
+}
+.footer > div:hover .object {
+  animation: dance 3s ease-in-out infinite forwards;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes dance {
+  0% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+}
