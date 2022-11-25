@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(20, 40px);
+  grid-template-rows: repeat(20, 40px);
+  border: 10px solid transparent;
+  width: 820px;
+  height: 820px;
+  margin: 50px auto;
+}
+.container > div {
+  border: 0px solid black;
+}
+.container > div.br {
+  border-right-width: 5px;
+  background-color: #eee;
+}
+.container > div.bb {
+  border-bottom-width: 5px;
+  background-color: #eee;
+}
+.grass {
+  background: green;
+}
