@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary: #ff004f;
+}
+html {
+  font-size: 15px;
+  font-family: "Gudea", sans-serif;
+  line-height: 1.4;
+  /* font-family: "Oleo Script", cursive;
+  font-family: "Press Start 2P", cursive; */
+}
+body {
+  margin: 0;
+  padding: 10px;
+  background-color: #e5e5ee;
+}
+.wrapper {
+  width: 100%;
+  max-width: 600px;
+  height: calc(100vh - 20px);
+  background-color: white;
+  margin-inline: auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  padding: 10px 20px;
+  font-family: "Oleo Script", cursive;
+  border-bottom: 1px solid #e5e5ee;
+}
+.header span {
+  color: var(--primary);
+}
+.body {
+  flex: 1;
+  overflow: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 10px 0;
+}
+.inputArea {
+  border-top: 1px solid #e5e5ee;
+  /* background-color: #efefff; */
+  padding: 20px;
+  display: flex;
+  align-items: flex-end;
+}
+.inputArea > div:first-child {
+  flex: 1;
+}
+.filterInput,
+.commentInput {
+  width: 100%;
+  padding: 10px 10px;
+  border: 1px solid #e5e5ee;
+  outline: 0;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-family: "Gudea", sans-serif;
+}
+.filterInput:focus,
+.commentInput:focus {
+  border-color: var(--primary);
+}
+.commentInput {
+  margin-bottom: 0px !important;
+}
+.sendButton {
+  border: 0;
+  font-size: 1rem;
+  background-color: var(--primary);
+  border-radius: 4px;
+  color: white;
+  padding: 10px 25px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+.comment {
+  width: 100%;
+  padding: 5px 20px;
+  padding-left: 20%;
+  display: flex;
+  align-items: flex-end;
+  animation: fly 0.2s forwards;
+}
+@keyframes fly {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+    height: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+    max-height: 800px;
+  }
+}
+.commentBody {
+  flex: 1;
+  background-color: #efefff;
+  border-radius: 20px 20px 0 20px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  color: #221d1d;
+  font-size: 1rem;
+}
+.commenter {
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
