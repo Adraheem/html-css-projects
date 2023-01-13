@@ -7,7 +7,7 @@
   --primary: #ff004f;
 }
 html {
-  font-size: 15px;
+  font-size: 16px;
   font-family: "Gudea", sans-serif;
   line-height: 1.4;
   /* font-family: "Oleo Script", cursive;
@@ -30,11 +30,41 @@ body {
 }
 .header {
   padding: 10px 20px;
-  font-family: "Oleo Script", cursive;
+  /* font-family: "Oleo Script", cursive; */
+  font-family: "Audiowide", cursive;
   border-bottom: 1px solid #e5e5ee;
+  color: var(--primary);
 }
 .header span {
-  color: var(--primary);
+  color: #221d1d;
+}
+.logo {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: var(--primary);
+  border-radius: 10px 10px 10px 0;
+  position: relative;
+}
+.logo::before {
+  content: "";
+  width: 60%;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.logo::after {
+  content: "";
+  width: 30%;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-100%);
 }
 .body {
   flex: 1;
@@ -88,6 +118,7 @@ body {
   display: flex;
   align-items: flex-end;
   animation: fly 0.2s forwards;
+  transition: all 0.2s linear;
 }
 @keyframes fly {
   0% {
