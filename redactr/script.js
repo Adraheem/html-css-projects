@@ -1,3 +1,8 @@
+let wrapper = document.getElementById("wrapper");
+console.log(wrapper.children);
+
+let eeee = document.querySelector(".inputArea > div:first-child");
+
 document.addEventListener("DOMContentLoaded", () => {
   if (localStorage) {
     const filterEle = document.querySelector(".filterInput");
